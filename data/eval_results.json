@@ -1,0 +1,244 @@
+{
+  "timestamp": "2026-10-23T16:47:19.385694+00:00",
+  "results": [
+    {
+      "id": "q1",
+      "question": "What are the library's weekday opening hours according to the documents?",
+      "type": "conflict",
+      "answer": "The student handbook lists weekday hours from 9:00 AM to 7:00 PM [Doc 1], while the campus guide gives Monday through Friday hours from 8:00 AM to 8:00 PM [Doc 4]. The two sources conflict on the closing time, and neither establishes which schedule is authoritative.",
+      "retrieved_files": [
+        "demo_student_handbook.txt",
+        "demo_campus_services.txt",
+        "demo_campus_guide.pdf",
+        "campus_guide_2025.txt"
+      ],
+      "retrieval_hit": true,
+      "reciprocal_rank": 1.0,
+      "answer_correct": true,
+      "citation_valid": true,
+      "citation_supported": 1.0,
+      "supported_sentences": [
+        {
+          "sentence": "The student handbook lists weekday hours from 9:00 AM to 7:00 PM [Doc 1], while the campus guide gives Monday through Friday hours from 8:00 AM to 8:00 PM [Doc 4].",
+          "supported": true,
+          "source_files": [
+            "campus_guide_2025.txt",
+            "demo_student_handbook.txt"
+          ]
+        }
+      ],
+      "grounded": true,
+      "refusal": true,
+      "is_refusal": false,
+      "conflict_handled": true,
+      "error": null
+    },
+    {
+      "id": "q2",
+      "question": "How often does the campus shuttle run, and where does it go?",
+      "type": "single",
+      "answer": "The campus guide lists a shuttle interval of every 20 minutes between the main gate and library from 9:00 AM to 6:00 PM [Doc 1] while the demo notice conflicts with this schedule by saying every 30-minute interval on weekdays [Doc 2]. The example notices conflict, so neither schedule is authoritative. The campus guide lists a shuttle interval of every 20 minutes between the main gate and library from 9:00 AM to 6:00 PM [Doc 1], while the demo notice says every 30-minute interval on weekdays [Doc 2].",
+      "retrieved_files": [
+        "campus_guide_2025.txt",
+        "demo_transport_notice.txt",
+        "demo_campus_guide.pdf",
+        "demo_campus_services.txt"
+      ],
+      "retrieval_hit": true,
+      "reciprocal_rank": 1.0,
+      "answer_correct": true,
+      "citation_valid": true,
+      "citation_supported": 1.0,
+      "supported_sentences": [
+        {
+          "sentence": "The campus guide lists a shuttle interval of every 20 minutes between the main gate and library from 9:00 AM to 6:00 PM [Doc 1] while the demo notice conflicts with this schedule by saying every 30-minute interval on weekdays [Doc 2].",
+          "supported": true,
+          "source_files": [
+            "campus_guide_2025.txt",
+            "demo_transport_notice.txt"
+          ]
+        },
+        {
+          "sentence": "The campus guide lists a shuttle interval of every 20 minutes between the main gate and library from 9:00 AM to 6:00 PM [Doc 1], while the demo notice says every 30-minute interval on weekdays [Doc 2].",
+          "supported": true,
+          "source_files": [
+            "campus_guide_2025.txt",
+            "demo_transport_notice.txt"
+          ]
+        }
+      ],
+      "grounded": true,
+      "refusal": true,
+      "is_refusal": false,
+      "conflict_handled": null,
+      "error": null
+    },
+    {
+      "id": "q3",
+      "question": "What protective equipment and footwear are required in a wet laboratory?",
+      "type": "single",
+      "answer": "Wet-lab users must wear protective eyewear and closed-toe shoes [Doc 1] [Doc 2]. The campus handbook lists different hours for the library, while the research lab handbook gives weekday operating times and specifies step-free boarding requests [Doc 3][Doc 4].",
+      "retrieved_files": [
+        "demo_research_lab.txt",
+        "demo_research_handbook.docx",
+        "research_lab_handbook_2025.txt",
+        "demo_transport_notice.txt"
+      ],
+      "retrieval_hit": true,
+      "reciprocal_rank": 1.0,
+      "answer_correct": true,
+      "citation_valid": true,
+      "citation_supported": 1.0,
+      "supported_sentences": [
+        {
+          "sentence": "Wet-lab users must wear protective eyewear and closed-toe shoes [Doc 1] [Doc 2].",
+          "supported": true,
+          "source_files": [
+            "demo_research_handbook.docx",
+            "demo_research_lab.txt"
+          ]
+        },
+        {
+          "sentence": "The campus handbook lists different hours for the library, while the research lab handbook gives weekday operating times and specifies step-free boarding requests [Doc 3][Doc 4].",
+          "supported": true,
+          "source_files": [
+            "demo_transport_notice.txt",
+            "research_lab_handbook_2025.txt"
+          ]
+        }
+      ],
+      "grounded": true,
+      "refusal": true,
+      "is_refusal": false,
+      "conflict_handled": null,
+      "error": null
+    },
+    {
+      "id": "q4",
+      "question": "How many books can a student borrow, and for how long?",
+      "type": "single",
+      "answer": "A student may borrow up to five books, with each loan lasting 14 days [Doc 3] or 5 books for 14 days in the student handbook [Doc 2].",
+      "retrieved_files": [
+        "demo_campus_services.txt",
+        "demo_student_handbook.txt",
+        "demo_campus_guide.pdf",
+        "demo_campus_guide.pdf"
+      ],
+      "retrieval_hit": true,
+      "reciprocal_rank": 1.0,
+      "answer_correct": true,
+      "citation_valid": true,
+      "citation_supported": 1.0,
+      "supported_sentences": [
+        {
+          "sentence": "A student may borrow up to five books, with each loan lasting 14 days [Doc 3] or 5 books for 14 days in the student handbook [Doc 2].",
+          "supported": true,
+          "source_files": [
+            "demo_campus_guide.pdf",
+            "demo_student_handbook.txt"
+          ]
+        }
+      ],
+      "grounded": true,
+      "refusal": true,
+      "is_refusal": false,
+      "conflict_handled": null,
+      "error": null
+    },
+    {
+      "id": "q5",
+      "question": "What should a passenger do to arrange step-free shuttle boarding?",
+      "type": "single",
+      "answer": "The campus transport desk can be requested for assistance with step-free boarding [Doc 1].",
+      "retrieved_files": [
+        "demo_transport_notice.txt",
+        "campus_guide_2025.txt",
+        "demo_campus_guide.pdf",
+        "demo_campus_services.txt"
+      ],
+      "retrieval_hit": true,
+      "reciprocal_rank": 1.0,
+      "answer_correct": true,
+      "citation_valid": true,
+      "citation_supported": 1.0,
+      "supported_sentences": [
+        {
+          "sentence": "The campus transport desk can be requested for assistance with step-free boarding [Doc 1].",
+          "supported": true,
+          "source_files": [
+            "demo_transport_notice.txt"
+          ]
+        }
+      ],
+      "grounded": true,
+      "refusal": true,
+      "is_refusal": false,
+      "conflict_handled": null,
+      "error": null
+    },
+    {
+      "id": "q6",
+      "question": "Where is the student support desk?",
+      "type": "single",
+      "answer": "The student support desk is in the east wing of the administration building [Doc 3]. The provided notices conflict on weekday shuttle intervals, and neither establishes which schedule takes precedence.",
+      "retrieved_files": [
+        "demo_campus_guide.pdf",
+        "campus_guide_2025.txt",
+        "demo_student_handbook.txt",
+        "demo_transport_notice.txt"
+      ],
+      "retrieval_hit": true,
+      "reciprocal_rank": 0.3333333333333333,
+      "answer_correct": true,
+      "citation_valid": true,
+      "citation_supported": 1.0,
+      "supported_sentences": [
+        {
+          "sentence": "The student support desk is in the east wing of the administration building [Doc 3].",
+          "supported": true,
+          "source_files": [
+            "demo_student_handbook.txt"
+          ]
+        }
+      ],
+      "grounded": true,
+      "refusal": true,
+      "is_refusal": false,
+      "conflict_handled": null,
+      "error": null
+    },
+    {
+      "id": "q7",
+      "question": "What is the library's late-return fine?",
+      "type": "unanswerable",
+      "answer": "The provided documents do not say how many days overdue a book must be before a late-return fine applies, or what that fine amount is [Doc 1][Doc 2].",
+      "retrieved_files": [
+        "demo_student_handbook.txt",
+        "demo_campus_services.txt",
+        "demo_campus_guide.pdf",
+        "campus_guide_2025.txt"
+      ],
+      "retrieval_hit": null,
+      "reciprocal_rank": null,
+      "answer_correct": null,
+      "citation_valid": true,
+      "citation_supported": 0.0,
+      "supported_sentences": [
+        {
+          "sentence": "The provided documents do not say how many days overdue a book must be before a late-return fine applies, or what that fine amount is [Doc 1][Doc 2].",
+          "supported": false,
+          "source_files": [
+            "demo_campus_services.txt",
+            "demo_student_handbook.txt"
+          ]
+        }
+      ],
+      "grounded": false,
+      "refusal": false,
+      "is_refusal": true,
+      "conflict_handled": null,
+      "error": null
+    }
+  ],
+  "skipped": []
+}

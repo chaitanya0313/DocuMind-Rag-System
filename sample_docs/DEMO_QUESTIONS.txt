@@ -1,0 +1,48 @@
+DOCUMIND AI — SAMPLE DEMO QUESTIONS
+===================================
+
+Option A — mixed-format citation demo:
+Upload demo_campus_guide.pdf and demo_research_handbook.docx.
+
+Option B — quick 4-document TXT demo:
+Upload all four files named demo_*.txt from this folder:
+  demo_campus_services.txt
+  demo_student_handbook.txt
+  demo_transport_notice.txt
+  demo_research_lab.txt
+
+Ask these questions in the Ask questions page:
+
+1. What are the library's weekday opening hours according to the documents?
+   Expected: The campus services guide says 8 AM–8 PM and the student handbook
+   says 9 AM–7 PM. The answer should state that these sources conflict and cite
+   both documents; it should not pick an authoritative schedule.
+
+2. How often does the campus shuttle run, and where does it go?
+   Expected: The services guide says every 20 minutes between the main gate and
+   library. The transport notice says every 30 minutes between the main gate,
+   library, and student center. State both reports as conflicting.
+
+3. How many library books may a student borrow, and for how long?
+   Expected: Up to five books for 14 days. Both the services guide and handbook
+   support this; cite both when retrieved.
+
+4. What should a passenger do to arrange step-free shuttle boarding?
+   Expected: Request assistance from the campus transport desk before the trip.
+
+5. What protective equipment and footwear are required in a wet laboratory?
+   Expected: Protective eyewear and closed-toe shoes.
+
+6. What is the student's favorite color?
+   Expected: I could not find sufficient supporting information in the uploaded
+   documents. This checks that the retriever abstains when evidence is weak.
+
+7. Where is the student support desk?
+   Expected: In the east wing of the administration building.
+
+For the benchmark, upload the four demo_*.txt documents first. Their content-based
+chunk IDs are seeded in evaluation_dataset.json. If you edit those files, view the
+new IDs in Documents and update the editable evaluation labels.
+
+Live answer generation requires Ollama to be running locally with the configured
+policy-bot model available. Retrieval and the labeled benchmark work without Ollama.

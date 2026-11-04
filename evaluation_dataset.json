@@ -1,0 +1,59 @@
+[
+  {
+    "question": "What are the library's weekday opening hours according to the documents?",
+    "expected_answer": "The campus services guide says 8 AM–8 PM while the student handbook says 9 AM–7 PM; the sources conflict.",
+    "relevant_chunk_ids": [
+      "600c90215642-pna-c0000",
+      "0bf46ed918d6-pna-c0000"
+    ],
+    "claims_total": 0,
+    "claims_supported": 0
+  },
+  {
+    "question": "How often does the campus shuttle run, and where does it go?",
+    "expected_answer": "The services guide says every 20 minutes between the main gate and library; the transport notice says every 30 minutes and also serves the student center.",
+    "relevant_chunk_ids": [
+      "600c90215642-pna-c0000",
+      "c7ad851801d8-pna-c0000"
+    ],
+    "claims_total": 0,
+    "claims_supported": 0
+  },
+  {
+    "question": "What protective equipment and footwear are required in a wet laboratory?",
+    "expected_answer": "Protective eyewear and closed-toe shoes are required.",
+    "relevant_chunk_ids": [
+      "debd45de34aa-pna-c0000"
+    ],
+    "claims_total": 0,
+    "claims_supported": 0
+  },
+  {
+    "question": "How many books can a student borrow, and for how long?",
+    "expected_answer": "Students may borrow up to five books for 14 days.",
+    "relevant_chunk_ids": [
+      "600c90215642-pna-c0000",
+      "0bf46ed918d6-pna-c0000"
+    ],
+    "claims_total": 0,
+    "claims_supported": 0
+  },
+  {
+    "question": "What should a passenger do to arrange step-free shuttle boarding?",
+    "expected_answer": "Request assistance from the campus transport desk before the trip.",
+    "relevant_chunk_ids": [
+      "c7ad851801d8-pna-c0000"
+    ],
+    "claims_total": 0,
+    "claims_supported": 0
+  },
+  {
+    "question": "Where is the student support desk?",
+    "expected_answer": "It is in the east wing of the administration building.",
+    "relevant_chunk_ids": [
+      "0bf46ed918d6-pna-c0000"
+    ],
+    "claims_total": 0,
+    "claims_supported": 0
+  }
+]

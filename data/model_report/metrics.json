@@ -1,0 +1,44 @@
+{
+ "source": "Documind.ipynb, Google Colab Tesla T4",
+ "test_set": "100 synthetic questions (legal, travel, telecom, banking) never used in training",
+ "notes": [
+  "The base model never produced a citation. Its 0.20 citation precision and recall come only from questions where no citation is expected.",
+  "Abstain accuracy and false-abstain rate were re-scored with a wider refusal-phrase matcher, because the original matcher missed wordings such as 'do not mention'.",
+  "Claims supported is a word-overlap estimate, not a human judgement."
+ ],
+ "comparison": [
+  {"metric": "Citation precision", "base": 0.200, "fine_tuned": 0.825, "higher_is_better": true},
+  {"metric": "Citation recall", "base": 0.200, "fine_tuned": 0.865, "higher_is_better": true},
+  {"metric": "Valid citation IDs", "base": 1.000, "fine_tuned": 1.000, "higher_is_better": true},
+  {"metric": "Conflict handled (both sources cited)", "base": 0.000, "fine_tuned": 0.667, "higher_is_better": true},
+  {"metric": "Abstain accuracy", "base": 0.750, "fine_tuned": 0.950, "higher_is_better": true},
+  {"metric": "False-abstain rate", "base": 0.025, "fine_tuned": 0.100, "higher_is_better": false},
+  {"metric": "ROUGE-L", "base": 0.457, "fine_tuned": 0.589, "higher_is_better": true},
+  {"metric": "Claims supported (word-overlap estimate)", "base": 0.000, "fine_tuned": 0.547, "higher_is_better": true},
+  {"metric": "Average output tokens", "base": 41.17, "fine_tuned": 36.86, "higher_is_better": false},
+  {"metric": "Seconds per answer (Colab T4 GPU)", "base": 1.711, "fine_tuned": 2.055, "higher_is_better": false}
+ ],
+ "training": {
+  "base_model": "Qwen2.5-1.5B-Instruct (4-bit, Unsloth)",
+  "method": "LoRA supervised fine-tuning, loss on responses only",
+  "total_parameters": 1562179072,
+  "trainable_parameters": 18464768,
+  "trainable_percent": 1.18,
+  "lora_rank": 16, "lora_alpha": 32, "lora_dropout": 0,
+  "target_modules": ["q_proj","k_proj","v_proj","o_proj","gate_proj","up_proj","down_proj"],
+  "epochs": 3, "steps": 84, "learning_rate": 0.0002,
+  "per_device_batch_size": 2, "gradient_accumulation_steps": 4, "effective_batch_size": 8,
+  "optimizer": "adamw_8bit", "max_seq_length": 2048,
+  "train_examples": 224, "validation_examples": 26,
+  "train_minutes": 3.7, "gpu": "Tesla T4 (14.6 GB)", "gpu_memory_after_model_load_gb": 1.66,
+  "final_validation_loss": 0.777, "perplexity": 2.17,
+  "epoch_losses": [
+   {"epoch": 1, "train": 0.741, "validation": 0.705},
+   {"epoch": 2, "train": 0.417, "validation": 0.694},
+   {"epoch": 3, "train": 0.263, "validation": 0.777}
+  ],
+  "exported_model": "Q4_K_M GGUF, about 940 MB",
+  "served_with": "Ollama (policy-bot)"
+ },
+ "tokens": {"train_avg": 398, "train_max": 579, "test_avg_input": 177, "model_context_window": 32768, "ollama_num_ctx": 4096, "retrieval_top_k": 4, "chunk_size_characters": 800, "chunk_overlap_characters": 120}
+}

@@ -1,0 +1,13 @@
+DocuMind Demo Collection - Campus Services (Fictional, 2025)
+
+LIBRARY HOURS
+The main campus library is open Monday through Friday from 8:00 AM to 8:00 PM.
+
+SHUTTLE
+The campus shuttle departs every 20 minutes between the main gate and the library
+from 9:00 AM until 6:00 PM on weekdays.
+
+BOOK LOANS
+Each student may borrow up to five books. The standard loan period is 14 days.
+
+This is fictional demonstration data prepared for the DocuMind AI jury presentation.

@@ -1,0 +1,20 @@
+[
+ {"id": "q1", "question": "What are the library's weekday opening hours according to the documents?", "type": "conflict",
+  "expected_facts": ["9:00 AM|9 AM", "7:00 PM|7 PM", "8:00 AM|8 AM", "8:00 PM|8 PM"],
+  "expected_sources": ["demo_student_handbook.txt", "demo_campus_services.txt", "campus_guide_2025.txt", "demo_campus_guide.pdf"], "min_sources_cited": 2},
+ {"id": "q2", "question": "How often does the campus shuttle run, and where does it go?", "type": "single",
+  "expected_facts": ["20 minutes", "main gate"],
+  "expected_sources": ["demo_campus_services.txt", "campus_guide_2025.txt", "demo_campus_guide.pdf"], "min_sources_cited": 1},
+ {"id": "q3", "question": "What protective equipment and footwear are required in a wet laboratory?", "type": "single",
+  "expected_facts": ["eyewear", "closed-toe"],
+  "expected_sources": ["demo_research_lab.txt", "research_lab_handbook_2025.txt", "demo_research_handbook.docx"], "min_sources_cited": 1},
+ {"id": "q4", "question": "How many books can a student borrow, and for how long?", "type": "single",
+  "expected_facts": ["five|5", "14 days"],
+  "expected_sources": ["demo_student_handbook.txt", "demo_campus_services.txt", "campus_guide_2025.txt", "demo_campus_guide.pdf"], "min_sources_cited": 1},
+ {"id": "q5", "question": "What should a passenger do to arrange step-free shuttle boarding?", "type": "single",
+  "expected_facts": ["transport desk"], "expected_sources": ["demo_transport_notice.txt"], "min_sources_cited": 1},
+ {"id": "q6", "question": "Where is the student support desk?", "type": "single",
+  "expected_facts": ["east wing", "administration building"], "expected_sources": ["demo_student_handbook.txt"], "min_sources_cited": 1},
+ {"id": "q7", "question": "What is the library's late-return fine?", "type": "unanswerable",
+  "expected_facts": [], "expected_sources": [], "min_sources_cited": 0}
+]

@@ -1,0 +1,13 @@
+DocuMind Demo Collection - Transport Notice (Fictional, 2025)
+
+WEEKDAY CAMPUS SHUTTLE
+The transport notice says the campus shuttle runs every 30 minutes on weekdays,
+from the main gate to the library and student center, between 9:00 AM and 6:00 PM.
+This conflicts with the campus services guide, which lists a different interval.
+The example notices do not identify which service schedule is newer or authoritative.
+
+ACCESSIBILITY
+Passengers who need step-free boarding can request assistance from the campus
+transport desk before their trip.
+
+This is fictional demonstration data prepared for the DocuMind AI jury presentation.

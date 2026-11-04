@@ -1,0 +1,11 @@
+DocuMind Demo Collection - Research Lab Guide (Fictional, 2025)
+
+WET-LAB SAFETY
+Anyone entering a wet laboratory must wear protective eyewear. Closed-toe shoes are
+also required. Laboratory staff check protective equipment before an experiment.
+
+AFTER-HOURS ACCESS
+The lab coordinator must approve after-hours access. Users record shared equipment
+in the laboratory log before and after use.
+
+This is fictional demonstration data prepared for the DocuMind AI jury presentation.
