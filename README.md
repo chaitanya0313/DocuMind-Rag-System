@@ -32,11 +32,10 @@ DocuMind answers questions over **multiple documents at once** (university rules
 ### Ask: conflicting sources are shown, not hidden
 Two documents give different library hours. DocuMind cites both and says the sources disagree instead of picking one.
 
-![Ask page showing conflict handling]("C:\Users\Chaitanya Pingle\Desktop\GENAI JURY\docs\screenshots\Screenshot 2026-11-04 113119.png")
+![Ask page showing conflict handling](docs/screenshots/ask-conflict-handling.png)
 
 ### Model performance: fine-tuned vs base model
-![Model performance page]("C:\Users\Chaitanya Pingle\Desktop\GENAI JURY\docs\screenshots\Screenshot 2026-11-04 112753.png")
-
+![Model performance page](docs/screenshots/model-performance.png)
 <!-- TODO: add docs/screenshots/evaluation.png (Evaluation page) and docs/screenshots/documents.png (Documents page), then reference them here -->
 
 ---
