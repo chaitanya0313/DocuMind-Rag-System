@@ -36,6 +36,7 @@ Two documents give different library hours. DocuMind cites both and says the sou
 
 ### Model performance: fine-tuned vs base model
 ![Model performance page](docs/screenshots/model-performance.png)
+
 <!-- TODO: add docs/screenshots/evaluation.png (Evaluation page) and docs/screenshots/documents.png (Documents page), then reference them here -->
 
 ---
