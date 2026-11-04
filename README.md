@@ -273,6 +273,4 @@ When the retrieved context does not contain the answer, the model replies that t
 B.Tech CSE, MIT ADT University, Pune
 GitHub: [chaitanya0313](https://github.com/chaitanya0313)
 
-## 15. License
 
-`TODO`: MIT License (or your choice)
